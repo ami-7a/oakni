@@ -17,15 +17,16 @@
 /* 住所・物件情報 */
 .room .room-adress{
   margin-top: 5vh;
-  line-height: 4vh;
+  line-height: 3.5vh;
 }
 
 .room .house-name{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .room .house-details{
   margin-top: 3vh;
+  font-size: .8rem;
 }
 
 .room .vacancy{
@@ -85,7 +86,7 @@
 /* スライドショー写真 */
 .room .slide {
 	position:relative;
-	height:45vh;
+	height: 47vh;
   margin-left: -20vw;
 }
 
@@ -128,9 +129,11 @@
 
 .room-list li{
   width: 25%;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 16%);
+  background-color: #838f82ee;
+  color: #f1f0f0;
+  box-shadow: 0 3px 20px #838f82;
   margin: 3%;
-  padding: 5% 4%;
+  padding: 4% 4%;
   line-height: 4.5vh;
   font-size: 1rem;
 }
@@ -153,7 +156,7 @@
 
 @media screen and (max-width:599px){
   .rooms{
-    width: 90vw;
+    width: 100vw;
   }
   
   .room{
@@ -163,6 +166,7 @@
 
   .room-02{
     flex-direction: column-reverse;
+    padding-top: 10vh;
   }
   
   .room li{
@@ -171,7 +175,7 @@
   
   /* 住所・物件情報 */
   .room .room-adress{
-    margin-top: 3vh;
+    margin-top: -4vh;
   }
   
   .room .house-name{
@@ -181,6 +185,12 @@
   /* フレンズへのボタン */
   .btn a{
     width: 50vw;
+  }
+
+  /* ボタン右、ライン */
+  .btn a::after {
+    right: -1vw;
+    width: 6vw;
   }
 
   /* スライドショー写真 */
@@ -201,8 +211,8 @@
   }
   
   .room-list li{
-    width: 60%;
-    margin: 2% auto;
+    width: 75%;
+    margin: 3% auto;
     padding: 12% 7%;
     line-height: 4vh;
     font-size: .9rem;

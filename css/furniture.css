@@ -10,13 +10,6 @@
   object-fit: cover;
 }
 
-/* h4共通 */
-h4{
-  font-size: 1.3rem;
-  font-weight: normal;
-  margin-bottom: 6vh;
-}
-
 /* 家具のリースについて */
 .about-rental{
   display: flex;
@@ -50,7 +43,6 @@ h4{
 }
 
 .rental-flow li{
-  background-color: #f1f0f0;
   border-radius: 20px;
   padding-left: 3%;
   display: flex;
@@ -133,11 +125,6 @@ h4{
   .furniture-photos img{
     width: 100vw;
     margin: 5vh auto 10vh;
-  }
-
-  /* h4共通 */
-  h4{
-    font-size: 1rem;
   }
 
   /* 家具のリースについて */

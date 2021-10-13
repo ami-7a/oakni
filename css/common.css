@@ -619,6 +619,17 @@ h3{
   margin-top: .2rem;
 }
 
+h4,h5{
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-shadow: 2px 2px 10px #9eac9c;
+}
+
+h5{
+  font-size: .85rem;
+  margin-bottom: 7vh;
+}
+
 @media screen and (max-width:599px){
 
   h2{
@@ -626,6 +637,14 @@ h3{
   }
   
   h3{
+    font-size: .8rem;
+  }
+
+  h4{
+    font-size: 1rem;
+  }
+
+  h5{
     font-size: .8rem;
   }
 

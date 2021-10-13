@@ -24,13 +24,6 @@
   padding-bottom: 1vh;
 }
 
-/* h4共通 */
-h4{
-  font-size: 1.3rem;
-  font-weight: normal;
-  margin-bottom: 6vh;
-}
-
 /* お部屋さがしのポイント */
 .find-point{
   display: flex;
@@ -40,7 +33,7 @@ h4{
 }
 
 .find-point li{
-  width: 30%;
+  width: 28%;
   line-height: 5vh;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 16%);
   padding: 4% 3%;
@@ -62,7 +55,7 @@ h4{
 /* お手続きの流れ */
 .find-flow{
   margin: 20vh auto;
-  width: 55vw;
+  width: 50vw;
 }
 
 .find-flow li{
