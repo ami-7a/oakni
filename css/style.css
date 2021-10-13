@@ -1,0 +1,464 @@
+
+/* フェードインアニメーション */
+.fadeIn {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.fadeIn p {
+	position: fixed;
+	left: 43%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 20vw;
+}
+
+.fadeIn p img{
+  width: 35vw;
+  height: 45vh;
+  object-fit: contain;
+}
+
+.mainimg img{
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  padding-top: 9vh;
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown{
+  position:absolute;
+  bottom:1%;
+  right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+   100%{bottom:1%;}
+}
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #eaedec;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #eaedec;
+  transform: skewX(-31deg);
+}
+
+.scrolldown:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#eaedec;
+}
+
+/* CEOメッセージ（Company共通） */
+.message, .company{
+  margin: 30vh auto;
+}
+
+h1{
+  margin-bottom: 1vh;
+  font-size: 1.7rem;
+}
+
+.text{
+  width: 50%;
+  margin: 3vh auto 5vh;
+  line-height: 5vh;
+}
+
+.ceo-name{
+  font-size: 2rem;
+  font-family: 'WindSong', cursive;
+}
+
+
+
+/* グリッドコンテナー */
+
+.parent{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: auto;
+}
+
+/* グリッドアイテム */
+.child1{
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+.child2{
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.child3{
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.child4{
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.child5{
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.child6{
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.child7{
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+.child8{
+  grid-row: 3/4;
+  grid-column: 3/5;
+}
+
+/* グリッドのイメージ５つ共通 */
+.grid-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* グリッドのテキスト３つ共通 */
+.grid-text{
+  background-color: #f1f0f0;
+}
+
+h2{
+  padding-top: 5vh;
+  padding-bottom: .2vh;
+  font-size: 1rem;
+}
+
+.h2-ja{
+  font-size: .8rem;
+}
+
+.h2-text{
+  width: 75%;
+  margin: 2vh auto 3vh;
+  font-size: .75rem;
+}
+
+
+/* MOREのボタン共通 */
+.btn a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: 0.3s;
+  width: 6.5vw;
+  height: 3.5vh;
+  margin-left: 16vw;
+  font-size: .7rem;
+}
+
+.btn a {
+	background-color: #ceb849ee;
+	border: 1px solid transparent;
+} 
+
+.btn a:hover {
+	color: #f1f0f0;
+  background-color:  #b99a00e0;
+}
+/* ボタン上、ズレたボックス */
+.btn a::before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: -5px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 1px solid #302c2579;
+}
+
+/* ボタン右、ライン */
+.btn a::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -0.8vw;
+	transform: translateY(-50%);
+	width: 1.8vw;
+	height: 1px;
+	background-color: #302c2579;
+}
+
+/* 会社概要 */
+.company-text{
+  width: 50%;
+  margin: 1vh auto;
+  line-height: 5vh;
+}
+
+.company-btn{
+  margin-left: 50%;
+}
+
+.tel{
+  border-bottom: 1px dotted #302c2579;
+  width: 10%;
+  margin: 0 auto;
+}
+
+
+/* SNS */
+
+.sns-parent{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  height: 35vh;
+  margin: 5vh auto;
+}
+
+.sns-child1{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  overflow: hidden;
+  position: relative;
+}
+
+.sns-child2{
+  grid-row: 1/2;
+  grid-column: 2/3;
+  overflow: hidden;
+  position: relative;
+}
+
+.sns-child3{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  overflow: hidden;
+  position: relative;
+}
+
+.sns-child1 img,
+.sns-child2 img,
+.sns-child3 img{
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.caption {
+	font-size: 1.5rem;
+	text-align: center;
+	color:#fff;
+	padding-top: 16vh;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left:	0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color: rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease-out;
+	transition:	all 0.4s ease-out;
+}
+
+.sns-child1:hover .mask,
+.sns-child2:hover .mask,
+.sns-child3:hover .mask {
+	opacity: 1;	/* マスクを表示する */
+	-webkit-transform: scale(2);	/* 2倍に拡大 */
+	transform: scale(2);
+}
+
+
+@media screen and (max-width:599px){
+
+  /* フェードインアニメーション */
+
+  .fadeIn p {
+    left: 18%;
+  }
+  
+  .fadeIn p img{
+    width: 83vw;
+    height: 90vh;
+  }
+
+  /* CEOメッセージ（Companyと共通） */
+  .message, .company{
+    margin: 15vh auto;
+  }
+  
+  h1{
+    margin-bottom: 5vh;
+    font-size: 1.5rem;
+  }
+  
+  .text{
+    width: 82%;
+  }
+  
+  .ceo-name{
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  /* グリッドコンテナー */
+  
+  .parent{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: -30vh;
+  }
+  
+  /* グリッドアイテム */
+  .child1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .child2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .child3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .child4{
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .child5{
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  .child6{
+    grid-row: 7/8;
+    grid-column: 1/2;
+  }
+  .child7{
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+  .child8{
+    display: none;
+  }
+
+  /* グリッドのテキスト３つ共通 */
+  h2{
+    font-size: 1.2rem;
+  }
+  
+  .h2-text{
+    width: 80%;
+  }
+  
+  
+  /* MOREのボタン共通 */
+  .btn a{
+    width: 20%;
+    margin: auto;
+  }
+  
+  /* ボタン右、ライン */
+  .btn a::after {
+    width: 3.5vw;
+  }
+  
+  /* 会社概要 */
+  .company-text{
+    width: 80%;
+    margin: .2vh auto;
+    line-height: 5vh;
+  }
+  
+  .company-btn{
+    margin: 4vh auto;
+  }
+  
+  .tel{
+    width: 30%;
+  }
+  
+  
+  /* SNS */
+  
+  .sns-parent{
+    grid-template-columns: 1fr ;
+    height: 30vh;
+  }
+  
+  .sns-child2{
+    display: none;
+  }
+  
+  .sns-child3{
+    display: none;
+  }
+   
+  /* Instagramマーク */
+  .caption {
+    font-size: 4rem;
+    padding-top: 11vh;
+  }
+  
+  .mask {
+    opacity: .4;	/* マスクを薄く表示 */
+
+  }
+  
+}
+
+
+
+
+
+
+
+

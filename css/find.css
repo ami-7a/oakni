@@ -1,0 +1,133 @@
+.find-top{
+  margin: 10vh auto 20vh;
+  margin-left: 15vw;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+}
+
+.find-top li{
+  width: 50%;
+}
+
+/* ページトップ左の写真 */
+.find-top .find-top-img img{
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* ページトップ右のテキスト */
+.find-top .find-top-txt span{
+  line-height: 6vh;
+  border-bottom: .5px dotted #838f82;
+  padding-bottom: 1vh;
+}
+
+/* h4共通 */
+h4{
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 6vh;
+}
+
+/* お部屋さがしのポイント */
+.find-point{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 10vh auto;
+}
+
+.find-point li{
+  width: 30%;
+  line-height: 5vh;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 16%);
+  padding: 4% 3%;
+}
+
+/* 文字上３つのアイコン */
+.find-point li img{
+  height: 15vh;
+  object-fit: cover;
+}
+
+/* ポイントのテキスト */
+.find-point .detail-txt{
+  font-size: .8rem;
+  margin-top: 1.5vh;
+}
+
+
+/* お手続きの流れ */
+.find-flow{
+  margin: 20vh auto;
+  width: 55vw;
+}
+
+.find-flow li{
+  border-radius: 20px;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+/* 左側のイラストたち */
+.find-flow .flow-img{
+  width: 40%;
+  display: flex;
+}
+
+.find-flow .flow-img img{
+  height: 15vh;
+  width: auto;
+  object-fit: cover;
+}
+
+
+/* 右側のテキスト */
+.find-flow li .flow-txt{
+  width: 60%;
+}
+
+.find-flow li .flow-txt p{
+  padding: 5vh 0vw;
+}
+
+/* 下向きの矢印 */
+.arrow-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 0.1em;
+  height: 1em;
+  background: currentColor;
+}
+
+.arrow-down::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  position: absolute;
+  left: -0.275em;
+  bottom: 0;
+  margin: auto;
+}
+
+/* CONTACT ボタン */
+.contact-btn{
+  width: 40%;
+}
+
+.contact-txt{
+  font-size: .8rem;
+  padding-top: 15vh;
+  margin-bottom: -17vh;
+}

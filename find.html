@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オークニエステート：お部屋さがし</title>
+    <meta name="description" content="福岡でのお住まい探し、ワークスペース探し">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/find.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ハンバーガーメニュー -->
+    <script>
+      $(function() {
+        $('.three_line').on("click", function(){
+    
+        $(this).toggleClass('open');
+        $('#gnav').toggleClass('open');
+      });
+    });
+    
+    // メニューをクリックされたら、非表示にする
+    $(function() {
+      $('.gnav-menu li a').on("click", function(){
+        $('#gnav').removeClass('open');
+      });
+    });
+    </script>
+
+  </head>
+  <body>
+
+    <header class="header">
+      <!-- ヘッダー左（ロゴ、会社名） -->
+      <section class="header-left">
+        <div class="site-logo"><img src="img/site-logo.png" alt="ロゴ"></div>
+        <p class="site-title">OAKNI ESTATE</p>
+      </section>
+      
+      <!-- ヘッダー右（グロナビ） -->
+      <section class="header-right">
+        <nav id="nav">
+
+          <li><a href="index.html" target="_blank" rel="noopener noreferrer">
+            <span class="en">TOP</span>
+            <span class="jp">トップ</span></a>
+          </li>
+
+          <li><a href="rooms.html" target="_blank" rel="noopener noreferrer" >
+            <span class="en">ROOMS</span>
+            <span class="jp">賃貸物件</span></a>
+          </li>
+            
+
+          <li><a href="furniture.html" target="_blank" rel="noopener noreferrer" >
+            <span class="en">FURNITURE</span>
+            <span class="jp">家具のリース</span></a>
+          </li>
+
+          <li><a href="company.html" target="_blank" rel="noopener noreferrer" >
+            <span class="en">COMPANY</span>
+            <span class="jp">会社について</span></a>
+          </li>
+
+          <li><a href="contact.html" target="_blank" rel="noopener noreferrer" >
+            <span class="en">CONTACT</span>
+            <span class="jp">お問い合わせ</span></a>
+          </li>
+
+        </nav>
+      </section>
+
+
+      <!-- ハンバーガーメニュー -->
+      <div id="hamburger">
+        <section>
+          <div class="three_line" id="btnA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </section>
+
+        <!--ハンバーガー内のグロナビ-->
+        <nav id="gnav">
+          <div class="gnav-menu">
+
+            <div class="gnav-img"><img src="img/oakni-logo.png" alt=""></div>
+
+            <ul>
+              <li><a href="index.html" target="_blank" rel="noopener noreferrer">
+                <span>トップページ</span></a>
+              </li>
+    
+              <li><a href="rooms.html" target="_blank" rel="noopener noreferrer" >
+                <span>賃貸物件情報</span></a>
+              </li>
+                
+    
+              <li><a href="furniture.html" target="_blank" rel="noopener noreferrer" >
+                <span>家具のリース</span></a>
+              </li>
+    
+              <li><a href="company.html" target="_blank" rel="noopener noreferrer" >
+                <span>会社概要</span></a>
+              </li>
+            </ul>
+
+            <!-- ハンバーガーお問い合わせボタン -->
+            <section class="contact02">
+              <a class="contact-btn02" href="contact.html">
+                <span>お問い合わせ</span>
+              </a>
+            </section>
+          </div>
+
+          <!--ハンバーガー内SNSセクション-->
+          <ul class="sns-btns">
+  
+            <li><a href="https://www.instagram.com/oakni_estate/?hl=ja" class="flowbtn insta"><i class="fab fa-instagram"></i></a></li>
+      
+            <li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn line"><i class="fab fa-line"></i></a></li>
+
+            <li><a href="mailto:oak@oakni-estate.co.jp" class="flowbtn mail"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main class="second-main">
+
+      <!-- 共通h1・h2 -->
+      <h2>Find Your Room</h2>
+      <h3>お部屋さがしのお手伝い</h3>
+
+      <!-- トップ画像とテキスト -->
+      <section class="find-top">
+        <li class="find-top-img">
+          <img src="rooms.img/find-your-room.jpg" alt="find-yourroom-img">
+        </li>
+
+        <li class="find-top-txt">
+          <span>福岡県内でのお部屋探しを<br>お手伝いさせていただきます。<br>ご案内、ご契約、入居の鍵渡しまで<br>責任を持ってご対応いたします。<br>どうぞ安心して私どもにお任せください。</span>
+        </li>
+      </section>
+
+      <!-- お部屋さがしのポイントセクション -->
+      <h4>お部屋探しのポイント</h4>
+      <section class="find-point">
+
+        <li>
+          <img class="mini-img" src="icons/find.png" alt="find-icon">
+          <p>お部屋探しは１ヶ月前から！</p>
+          <p class="detail-txt">お部屋を決め、申し込み〜ご入居までに、審査や契約で約１ヶ月弱かかります。入居希望時期より１ヶ月前から、お部屋探しをスタートしましょう！
+          </p> 
+        </li>
+
+        <li>
+          <img class="mini-img" src="icons/check.png" alt="check-icon">
+          <p>外せない条件は？</p>
+          <p class="detail-txt">家賃はいくらまでか・バストイレ別・ペットを飼いたい・ルームシェアがしたい...等。絶対に外せない条件を予め洗い出しておきましょう。</p>
+        </li>
+
+        <li>
+          <img class="mini-img" src="icons/money.png" alt="money-icon">
+          <p>初期費用をきちんと準備</p>
+          <p class="detail-txt">敷金・礼金・初月のお家賃・仲介手数料...等。初期費用は家賃の５〜６ヶ月程度必要となります。申し込み前に必ず確認しましょう。</p>
+        </li>
+        
+      </section>
+
+
+      <!-- お部屋さがしの流れ -->
+      <section class="find-flow">
+        <h4>お部屋探しの流れ</h4>
+
+        <li>
+          <div class="flow-img">
+            <img src="icons/contact-01.png" alt="">
+          </div>
+
+          <div class="flow-txt">
+            <p>オークニエステートへお問い合わせ</p>
+            <span class="arrow-down"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="flow-img">
+            <img src="icons/contact-02.png" alt="">
+          </div>
+
+          <div class="flow-txt">
+            <p>内覧のご予約</p>
+            <span class="arrow-down"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="flow-img">
+            <img src="icons/writting.png" alt="">
+          </div>
+
+          <div class="flow-txt">
+            <p>申込書に記入</p>
+            <span class="arrow-down"></span>
+          </div>
+        </li>
+
+        <li>
+          <div class="flow-img">
+            <img src="icons/lookup.png" alt="">
+          </div>
+
+          <div class="flow-txt">
+            <p>入居審査</p>
+          </div>
+
+        </li>
+
+        <li>
+          <div class="flow-img">
+            <img src="icons/pay.png" alt="">
+          </div>
+
+          <div class="flow-txt">
+            <p>ご入金</p>
+          </div>
+
+        </li>
+
+
+         
+        <!-- 共通お問い合わせボタン -->
+        <section class="contact">
+          <p class="contact-txt">- 詳しくはお問い合わせください -</p>
+          <a class="contact-btn" href="contact.html">
+            <span>CONTACT</span>
+          </a>
+        </section>
+
+        
+      </section>
+
+
+
+
+      
+    </main>
+    
+  <footer class="footer">
+      <!-- 共通フッター -->
+      <section class="main-footer">
+        <section class="footer-left">
+          <img class="footer-logo" src="img/oakni-logo.png" alt="">
+          <div class="footer-adress">
+            <p class="comapny-name">株式会社オークニエステート</p>
+            <p class="adress">〒810-0023<br><a href="company.html" target="_blank" rel="noopener noreferrer" >福岡市中央区警固2-1-17-902</a></p>
+            <p class="footer-tel"><a href="tel:092-716-8265" target="_blank" rel="noopener noreferrer" >tel:092-716-8265</a></p>
+          </div>
+        </section>
+
+        <section class="footer-right">
+          <li><a href="index.html" target="_blank" rel="noopener noreferrer" >
+            <span>TOP</span></a>
+          </li>
+
+          <li><a href="rooms.html" target="_blank" rel="noopener noreferrer" >
+          <span>ROOMS</span></a>
+          </li>
+          
+          <li><a href="furniture.html" target="_blank" rel="noopener noreferrer" >
+          <span>FURNITURE</span></a>
+          </li>
+
+          <li><a href="company.html" target="_blank" rel="noopener noreferrer" >
+          <span>COMPANY</span></a>
+          </li>
+
+          <li><a href="contact.html" target="_blank" rel="noopener noreferrer" >
+          <span>CONTACT</span></a>
+          </li>
+
+        </section>
+      </section>
+
+      <section class="copy-right">
+        <p>©︎ 2021, Oakni Estate, All Rights Reserved.</p>
+      </section>
+    
+    </footer>
+  
+  </body>
+</html>

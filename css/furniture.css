@@ -1,0 +1,213 @@
+/* トップのイメージ５つ */
+.furniture-photos{
+  display: flex;
+}
+
+.furniture-photos img{
+  width: 20%;
+  margin: 5vh auto 10vh;
+  height: 25vh;
+  object-fit: cover;
+}
+
+/* h4共通 */
+h4{
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 6vh;
+}
+
+/* 家具のリースについて */
+.about-rental{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  margin: 0vh auto;
+}
+
+.about-rental li{
+  width: 25%;
+  line-height: 5vh;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 16%);
+  padding: 4% 2%;
+}
+
+/* 文字上３つのアイコン */
+.about-rental li img{
+  height: 15vh;
+  object-fit: cover;
+}
+
+.about-rental .detail-txt{
+  font-size: .8rem;
+  margin-top: 1.5vh;
+}
+
+/* お手続きの流れ */
+.rental-flow{
+  margin: 20vh auto;
+  width: 55vw;
+}
+
+.rental-flow li{
+  background-color: #f1f0f0;
+  border-radius: 20px;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+/* 左側のイラストたち */
+.rental-flow .flow-img{
+  width: 40%;
+  display: flex;
+}
+
+.rental-flow .flow-img img{
+  height: 15vh;
+  width: auto;
+  object-fit: cover;
+}
+
+/* 最後のイラストだけ中央寄せ */
+.last-img{
+  margin-left: 4vw;
+}
+
+/* 右側のテキスト */
+.rental-flow li .flow-txt{
+  width: 60%;
+}
+
+.rental-flow li .flow-txt p{
+  padding: 5vh 0vw;
+}
+
+/* 下向きの矢印 */
+.arrow-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 0.1em;
+  height: 1em;
+  background: currentColor;
+}
+
+.arrow-down::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  position: absolute;
+  left: -0.275em;
+  bottom: 0;
+  margin: auto;
+}
+
+/* CONTACT ボタン */
+.contact-btn{
+  width: 40%;
+}
+
+.contact-txt{
+  font-size: .8rem;
+  padding-top: 15vh;
+  margin-bottom: -17vh;
+}
+
+
+@media screen and (max-width:599px){
+
+
+    /* トップのイメージ５つ */
+  .img-none{
+    display: none;
+  }
+
+  .furniture-photos img{
+    width: 100vw;
+    margin: 5vh auto 10vh;
+  }
+
+  /* h4共通 */
+  h4{
+    font-size: 1rem;
+  }
+
+  /* 家具のリースについて */
+  .about-rental{
+    flex-direction: column;
+    width: 90vw;
+    margin: 0vh auto;
+  }
+
+  .about-rental li{
+    width: 100%;
+    line-height: 4vh;
+    padding:4%;
+  }
+
+  /* 文字上３つのアイコン */
+  .about-rental li img{
+    height: 10vh;
+  }
+
+  .about-rental .detail-txt{
+    font-size: .7rem;
+    margin-top: 0vh;
+  }
+
+  /* お手続きの流れ */
+  .rental-flow{
+    width: 90vw;
+  }
+
+  .rental-flow li{
+    padding: 3%;
+  }
+
+  /* 左側のイラストたち */
+  .rental-flow .flow-img{
+    width: 40%;
+    display: flex;
+  }
+
+  /* 最後のイラストだけ中央寄せ(解除) */
+  .last-img{
+    margin-left: 0vw;
+  }
+
+  /* 右側のテキスト */
+  .rental-flow li .flow-txt{
+    width: 60%;
+  }
+
+  .rental-flow li .flow-txt p{
+    padding: 5vh 0vw;
+  }
+
+  /* 下向きの矢印 */
+  .arrow-down {
+    width: 0.1px;
+  }
+
+  /* CONTACT ボタン */
+  .contact-btn{
+    width: 70%;
+  }
+
+  .contact-txt{
+    font-size: .8rem;
+    padding-top: 15vh;
+    margin-bottom: -17vh;
+  }
+
+
+
+}

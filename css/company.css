@@ -1,0 +1,75 @@
+/* オークニエステートのロゴ写真 */
+.company-logo img{
+  width: 40vw;
+  height: 25vh;
+  object-fit: contain;
+  margin-top: 10vh;
+}
+
+
+/* 会社概要 */
+.company-txt{
+  margin: 2vh auto ;
+  line-height: 5vh;
+}
+
+.company-name{
+  font-size: 1.1rem;
+  margin-bottom: 3vh;
+}
+
+/* スタッフ紹介 */
+.staff{
+  margin: 20vh auto;
+}
+
+.staff-introduce{
+  width: 90vw;
+  margin: 5vh auto;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 3.5vh;
+  font-size: .8rem;
+}
+
+.staff-introduce li{
+  width: 42%;
+  margin: 3vh auto;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 7px gray;
+  padding: 3%;
+}
+
+.staff-name{
+  font-size: 1.15rem;
+}
+
+.staff-en-name{
+  color: #838f82;
+  font-family: 'WindSong', cursive;
+  font-size: 1.2rem;
+}
+
+.staff-comment{
+  margin-top: 1.5vh;
+}
+
+
+@media screen and (max-width:599px) {
+
+  .company-logo img{
+    margin-top: 5vh;
+  }
+
+  .staff-introduce{
+    flex-direction: column;
+    font-size: .7rem;
+  }
+
+  .staff-introduce li{
+    width: 100%;
+    margin: 2vh auto;
+    padding: 7% 3%;
+  }
+  
+}
