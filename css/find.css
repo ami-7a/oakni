@@ -59,7 +59,6 @@
 }
 
 .find-flow li{
-  border-radius: 20px;
   padding-left: 3%;
   display: flex;
   align-items: center;
@@ -68,11 +67,10 @@
 /* 左側のイラストたち */
 .find-flow .flow-img{
   width: 40%;
-  display: flex;
 }
 
 .find-flow .flow-img img{
-  height: 15vh;
+  height: 17vh;
   width: auto;
   object-fit: cover;
 }
@@ -83,8 +81,14 @@
   width: 60%;
 }
 
-.find-flow li .flow-txt p{
-  padding: 5vh 0vw;
+.find-flow li .flow-txt .subject{
+  padding: 6vh 0vw 2vh;
+  font-weight: bold;
+}
+
+.find-flow li .flow-txt .contxt{
+  margin-bottom: 5vh;
+  font-size: .8rem;
 }
 
 /* 下向きの矢印 */
@@ -123,4 +127,95 @@
   font-size: .8rem;
   padding-top: 15vh;
   margin-bottom: -17vh;
+}
+
+
+
+
+
+@media screen and (max-width:599px){
+
+  .find-top{
+    flex-direction: column;
+    margin: 5vh auto 10vh;
+    margin-left: 0vw;
+    width: 100vw;
+  }
+  
+  .find-top li{
+    width: 100%;
+  }
+  
+  /* ページトップ左の写真 */
+  .find-top .find-top-img img{
+    height: 30vh;
+    margin-bottom: 5vh;
+  }
+  
+  /* お部屋さがしのポイント */
+  .find-point{
+    flex-direction: column;
+    width: 100vw;
+    margin: 2vh auto;
+  }
+  
+  .find-point li{
+    width: 80%;
+    margin: 1vh auto;
+    padding: 4% 6%;
+  }
+  
+  /* 文字上３つのアイコン */
+  .find-point li img{
+    height: 10vh;
+  }
+  
+  /* ポイントのテキスト */
+  .find-point .detail-txt{
+    font-size: .75rem;
+    margin-top: 1vh;
+  }
+  
+  
+  /* お手続きの流れ */
+  .find-flow{
+    margin: 10vh auto;
+    width: 100vw;
+  }
+  
+  .find-flow li{
+    flex-direction: column;
+    padding-left: 0%;
+  }
+  
+  /* 上側のイラストたち */
+  .find-flow .flow-img{
+    width: 90%;
+  }
+  
+  .find-flow .flow-img img{
+    height: 15vh;
+    margin-top: 2vh;
+  }
+  
+  
+  /* 下側のテキスト */
+  .find-flow li .flow-txt{
+    width: 80%;
+  }
+  
+  .find-flow li .flow-txt .subject{
+    padding: 1vh 0vw 2vh;
+  }
+  
+  .find-flow li .flow-txt .contxt{
+    margin-bottom: 5vh;
+  }
+  
+  
+  /* CONTACT ボタン */
+  .contact-btn{
+    width: 70%;
+  }
+  
 }
