@@ -155,7 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             <span class="jp">会社について</span></a>
           </li>
 
-          <li><a href="contact.html" target="_blank" rel="noopener noreferrer" >
+          <li><a href="contact.php" target="_blank" rel="noopener noreferrer" >
             <span class="en">CONTACT</span>
             <span class="jp">お問い合わせ</span></a>
           </li>
@@ -201,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
             <!-- ハンバーガーお問い合わせボタン -->
             <section class="contact02">
-              <a class="contact-btn02" href="contact.html">
+              <a class="contact-btn02" href="contact.php">
                 <span>お問い合わせ</span>
               </a>
             </section>
@@ -315,7 +315,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
           <span>COMPANY</span></a>
           </li>
 
-          <li><a href="contact.html" target="_blank" rel="noopener noreferrer" >
+          <li><a href="contact.php" target="_blank" rel="noopener noreferrer" >
           <span>CONTACT</span></a>
           </li>
 
