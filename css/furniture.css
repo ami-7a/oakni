@@ -130,14 +130,15 @@
   /* 家具のリースについて */
   .about-rental{
     flex-direction: column;
-    width: 90vw;
+    width: 100vw;
     margin: 0vh auto;
   }
 
   .about-rental li{
-    width: 100%;
+    width: 80%;
     line-height: 4vh;
     padding:4%;
+    margin: 1vh auto;
   }
 
   /* 文字上３つのアイコン */
