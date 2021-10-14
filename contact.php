@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     
     // エラーなし（全ての項目が入力されている）
     if ($err_msg == '') {
-        $to = "ami7a121@gmail.com"; // 管理者のメールアドレスなど送信先
+        $to = "oak@oakni-estate.co.jp"; // 管理者のメールアドレス(送信先)
         // Yudaiより下記を追加
         $from = "Amy <" . $email . ">";
 
