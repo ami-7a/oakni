@@ -18,6 +18,10 @@
   margin-bottom: 3vh;
 }
 
+.map{
+  margin-top: 5vh;
+}
+
 /* スタッフ紹介 */
 .staff{
   margin: 20vh auto;
@@ -70,6 +74,11 @@
     width: 100%;
     margin: 2vh auto;
     padding: 7% 3%;
+  }
+
+  .map{
+    width: 85vw;
+    object-fit: contain;
   }
   
 }
