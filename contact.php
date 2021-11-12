@@ -129,6 +129,28 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
       });
     });
     </script>
+
+    <!-- 各コンテンツをふっわっと表示させるJS -->
+    <script>
+      window.onload = function() {
+        scroll_effect();
+
+        $(window).scroll(function(){
+        scroll_effect();
+      });
+
+      function scroll_effect(){
+        $('.effect-fade').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight){
+          $(this).addClass('effect-scroll');
+          }
+        });
+        }
+      };
+    </script>
     
   </head>
   <body>
@@ -231,7 +253,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
     </header>
 
-    <main class="second-main">
+    <main class="second-main effect-fade">
 
       <!-- 共通h1・h2 -->
       <h2>Contact us</h2>
@@ -249,7 +271,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
           </div>
       <?php endif; ?> 
             
-      <form class="form" method="post">
+      <form class="form effect-fade" method="post">
 
         <li class="form-left">
           <img src="img/contact-img.jpg" alt="">
@@ -296,7 +318,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
     </main>
     
-    <footer class="footer">
+    <footer class="footer effect-fade">
       <!-- 共通フッター -->
       <section class="main-footer">
         <section class="footer-left">

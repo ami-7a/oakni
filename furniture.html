@@ -54,6 +54,28 @@
     });
     </script>
 
+    <!-- 各コンテンツをふっわっと表示させるJS -->
+    <script>
+      window.onload = function() {
+        scroll_effect();
+
+        $(window).scroll(function(){
+        scroll_effect();
+      });
+
+      function scroll_effect(){
+        $('.effect-fade').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight){
+          $(this).addClass('effect-scroll');
+          }
+        });
+        }
+      };
+    </script>
+
   </head>
   <body>
 
@@ -155,12 +177,12 @@
 
     </header>
 
-    <main class="second-main">
+    <main class="second-main effect-fade">
       
       <h2>Rental Furniture</h2>
       <h3>家具のリース</h3>
 
-      <section class="furniture-photos">
+      <section class="furniture-photos effect-fade">
         <img src="rooms.img/furniture-01.jpg" alt="家具１">
         <img src="rooms.img/furniture-02.jpg" alt="家具２" class="img-none">
         <img src="rooms.img/furniture-03.jpg" alt="家具３" class="img-none">
@@ -171,7 +193,7 @@
 
       <h4>About Rental</h4>
       <h5>家具のリースについて</h5>
-      <section class="about-rental">
+      <section class="about-rental effect-fade">
 
         <li>
           <img class="mini-img" src="icons/money.png" alt="money-icon">
@@ -195,7 +217,7 @@
       </section>
 
       
-      <section class="rental-flow">
+      <section class="rental-flow effect-fade">
         <h4>Rental Flow</h4>
         <h5>お手続きの流れ</h5>
 
@@ -249,7 +271,7 @@
 
          
         <!-- 共通お問い合わせボタン -->
-        <section class="contact">
+        <section class="contact effect-fade">
           <p class="contact-txt">- 詳しくはお問い合わせください -</p>
           <a class="contact-btn" href="contact.php">
             <span>CONTACT</span>
@@ -261,7 +283,7 @@
       
     </main>
     
-  <footer class="footer">
+  <footer class="footer effect-fade">
       <!-- 共通フッター -->
       <section class="main-footer">
         <section class="footer-left">
