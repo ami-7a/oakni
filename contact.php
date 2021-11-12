@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>オークニエステート：お問い合わせ</title>
-    <meta name="description" content="福岡でのお部屋探し、不動産仲介、ワークスペース探し、賃貸売買はオークニエステートにお任せください。福岡市中央区警固にオフィスを構える不動産です。どうぞお気軽に、ご相談ください。">="福岡でのお住まい探し、ワークスペース探し">
+    <meta name="description" content="福岡でのお部屋探し、不動産仲介、ワークスペース探し、賃貸売買はオークニエステートにお任せください。福岡市中央区警固にオフィスを構える不動産です。どうぞお気軽に、ご相談ください。">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/common.css">

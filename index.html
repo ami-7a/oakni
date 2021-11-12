@@ -70,6 +70,28 @@
       });
     </script>
 
+    <!-- 各コンテンツをふっわっと表示させるJS -->
+    <script>
+      window.onload = function() {
+        scroll_effect();
+
+        $(window).scroll(function(){
+        scroll_effect();
+      });
+
+      function scroll_effect(){
+        $('.effect-fade').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (scroll > elemPos - windowHeight){
+          $(this).addClass('effect-scroll');
+          }
+        });
+        }
+      };
+    </script>
+
   </head>
 
   <body>
@@ -183,7 +205,7 @@
       </div>
 
       <!-- メッセージセクション -->
-      <section class="message">
+      <section class="message effect-fade">
         <h1>WELCOME TO OAKNI ESTATE</h1>
         <p>オークニエステートへようこそ！</p>
 
@@ -197,7 +219,7 @@
       </section>
 
       <!-- グリッドセクション -->
-      <section class="grid">
+      <section class="grid effect-fade">
         <div class="parent">
     
           <div class="child1 grid-img">
@@ -214,7 +236,7 @@
               <p class="h2-ja">家具のリース</p>
               <p class="h2-text">ライフスタイルに合わせて家具・家電のリースをご提案しております。２年サイクルでの新品交換、最新家電もご用意しております。</p>
             </a>
-            <div class="btn btn-more">
+            <div class="btn btn-more effect-fade">
               <a href="furniture.html" target="_blank" rel="noopener noreferrer" >MORE</a>
             </div>
           </div>
@@ -225,7 +247,7 @@
               <p class="h2-ja">賃貸物件情報</p>
               <p class="h2-text">コンクリート打ちっぱなしのお洒落な賃貸マンション。一部屋ごとに異なる雰囲気を持つお部屋をご用意しております。<br>※満室の場合もございます</p>
             </a>
-            <div class="btn btn-more">
+            <div class="btn btn-more effect-fade">
               <a href="rooms.html" target="_blank" rel="noopener noreferrer" >MORE</a>
             </div>
 
@@ -245,7 +267,7 @@
               <p class="h2-ja">お部屋さがし</p>
               <p class="h2-text">ご案内、ご契約、入居の鍵渡しまで責任を持ってご対応させていただきます。<br>お部屋探しのお手伝いを、ぜひ私たちにお任せ下さい。</p>
             </a>
-            <div class="btn btn-more">
+            <div class="btn btn-more effect-fade">
               <a href="find.html" target="_blank" rel="noopener noreferrer" >MORE</a>
             </div>
           </div>
@@ -258,7 +280,7 @@
       </section>
 
       <!-- 会社概要セクション -->
-      <section class="company">
+      <section class="company effect-fade">
         <h1>COMPANY</h1>
         <p>会社概要</p>
 
@@ -267,7 +289,7 @@
           <a href="https://goo.gl/maps/iszB7d7JW33XgQx3A" target="_blank" rel="noopener noreferrer" >[google map]</a>
         </p>
         <p class="company-text tel"><a href="tel:092-716-8265" target="_blank" rel="noopener noreferrer" >tel:092-716-8265</a></p>
-        <div class="btn btn-more company-btn">
+        <div class="btn btn-more company-btn effect-fade">
           <a href="furniture.html" target="_blank" rel="noopener noreferrer" >MORE</a>
         </div>
         <p class="company-text"></p>
@@ -276,7 +298,7 @@
       </section>
 
       <!-- SNSセクション -->
-      <section class="sns">
+      <section class="sns effect-fade">
         <h1>INSTAGRAM</h1>
         <div class="sns-parent">
           <div class="sns-child1">
@@ -311,7 +333,7 @@
       </section>
 
       <!-- 共通お問い合わせボタン -->
-      <section class="contact">
+      <section class="contact effect-fade">
         <a class="contact-btn" href="contact.php">
           <span>CONTACT</span>
         </a>
@@ -319,7 +341,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer effect-fade">
       <!-- 共通フッター -->
       <section class="main-footer">
         <section class="footer-left">

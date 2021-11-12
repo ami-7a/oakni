@@ -30,6 +30,21 @@ li{
   list-style: none;
 }
 
+/* 下からふっわっと表示 */
+.effect-fade {
+  opacity : 0;
+  transform : translate(0, 45px);
+  transition : all 700ms;
+  transition-delay: .5s;
+}
+  
+.effect-fade.effect-scroll {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+/*** 下からふっわっと表示ここまで ***/
+
+
 
 /* トップ固定ヘッダー*/
 .header{
