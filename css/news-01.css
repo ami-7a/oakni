@@ -1,0 +1,88 @@
+.main-img{
+  margin-top: 5vh;
+
+}
+.main-img img{
+  width: 65vw;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.greeting, .sanpai, .atoma{
+  margin: 15vh auto;
+  line-height: 7vh;
+}
+
+.sanpai-txt{
+  margin-left: 5vw;
+}
+
+.sanpai ul,
+.atoma ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  margin: 10vh auto;
+}
+
+.sanpai ul li,
+.atoma ul li{
+  width: 50%;
+}
+
+.sanpai ul li img{
+  height: 65vh;
+  object-fit: contain;
+}
+
+.atoma ul li img{
+  height: 55vh;
+  object-fit: contain;
+}
+
+h4{
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width:599px) {
+
+  .main-img{
+    margin: 5vh auto;
+  }
+
+  .main-img img{
+    width: 90vw;
+    height: 30vh;
+  }
+  
+  /* .greeting, .sanpai, .atoma{
+    margin: 10vh auto;
+    line-height: 7vh;
+  } */
+  
+  
+  .sanpai ul,
+  .atoma ul{
+    flex-direction: column;
+    width: 100vw;
+    margin: 5vh auto;
+  }
+
+  .sanpai .reverse,
+  .atoma .reverse{
+    flex-direction: column-reverse;
+  }
+  
+  .sanpai ul li,
+  .atoma ul li{
+    width: 100%;
+  }
+  
+  .sanpai ul li img,
+  .atoma ul li img{
+    height: 40vh;
+    object-fit: contain;
+  }
+
+}
