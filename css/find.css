@@ -89,6 +89,7 @@
 .find-flow li .flow-txt .contxt{
   margin-bottom: 5vh;
   font-size: .8rem;
+  line-height: 5vh;
 }
 
 /* 下向きの矢印 */
