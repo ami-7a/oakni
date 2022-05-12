@@ -244,7 +244,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   
             <li><a href="https://www.instagram.com/oakni_estate/?hl=ja" class="flowbtn insta"><i class="fab fa-instagram"></i></a></li>
       
-            <li><a href="https://line.me/ti/p/%ライン＠のアカウント" class="flowbtn line"><i class="fab fa-line"></i></a></li>
+            <li><a href="https://lin.ee/byyGB2t" class="flowbtn line"><i class="fab fa-line"></i></a></li>
 
             <li><a href="mailto:oak@oakni-estate.co.jp" class="flowbtn mail"><i class="far fa-envelope"></i></a></li>
             </ul>
