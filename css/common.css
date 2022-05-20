@@ -89,6 +89,7 @@ li{
 }
 #nav li{
   padding-right: 1.5vw;
+  position: relative;
 }
 
 /* hoverで日本語表示・非表示 */
@@ -104,6 +105,24 @@ li{
 #nav li a:hover span.jp {
   display: inline;
 }
+
+
+/*子階層以降共通*/
+#nav li li {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  position: absolute;
+  width: 10vw;
+}
+
+#nav li:hover > ul > li {
+  height: 5rem;
+  overflow: scroll;
+}
+
+
+
 
 .main{
   height: auto;

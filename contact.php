@@ -174,6 +174,9 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
           <li><a href="rooms.html" target="_blank" rel="noopener noreferrer" >
             <span class="en">ROOMS</span>
             <span class="jp">賃貸物件</span></a>
+            <ul>
+              <li><a href="rooms.html#jump">▶︎必要書類</a></li>
+            </ul>
           </li>
             
 
@@ -191,7 +194,6 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             <span class="en">CONTACT</span>
             <span class="jp">お問い合わせ</span></a>
           </li>
-
         </nav>
       </section>
 
